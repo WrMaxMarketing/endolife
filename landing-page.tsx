@@ -54,13 +54,13 @@ export default function Component() {
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Quero saber mais
                 </Button>
-                <Button
+                {/* <Button
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-[#827C73] text-lg px-8 py-4 h-auto font-semibold"
                 >
                   Ver depoimentos
-                </Button>
+                </Button> */}
               </div>
             </div>
 
@@ -86,51 +86,51 @@ export default function Component() {
         </div>
       </section>
       <section className="py-16 md:py-24 bg-[#F9F9F3]">
-  <div className="container mx-auto px-4">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#827C73] mb-4">
-        Histórias de transformação
-      </h2>
-      <p className="text-lg text-[#6B6B6B]">
-        Resultados reais de mulheres que decidiram cuidar de si com leveza, propósito e acompanhamento.
-      </p>
-    </div>
-
-    <Swiper
-      modules={[Navigation, Pagination]}
-      spaceBetween={24}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      breakpoints={{
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
-    >
-      {[
-        { nome: "Maria", texto: "−20kg • Mais saúde e menos cansaço", img: "/images/transformacao1.jpg" },
-        { nome: "Fernanda", texto: "−12kg • Voltei a usar roupas que amo", img: "/images/transformacao2.jpg" },
-        { nome: "Juliana", texto: "−15kg • Energia para brincar com meus filhos", img: "/images/transformacao3.jpg" },
-        { nome: "Patrícia", texto: "−18kg • Adeus efeito sanfona", img: "/images/transformacao4.jpg" },
-      ].map((pessoa, idx) => (
-        <SwiperSlide key={idx}>
-          <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300">
-            <Image
-              src={pessoa.img}
-              alt={`Transformação de ${pessoa.nome}`}
-              width={500}
-              height={500}
-              className="w-full h-80 object-cover"
-            />
-            <div className="p-4 text-center text-[#827C73] bg-[#F0F1DA]">
-              <p className="text-lg font-semibold">{pessoa.nome}</p>
-              <p className="text-sm text-[#6B6B6B] italic">{pessoa.texto}</p>
-            </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      <div className="container mx-auto px-4">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#827C73] mb-4">
+      Histórias de transformação
+    </h2>
+    <p className="text-lg text-[#6B6B6B]">
+      Resultados reais de mulheres que decidiram cuidar de si com leveza, propósito e acompanhamento.
+    </p>
   </div>
+
+  <Swiper
+    modules={[Navigation, Pagination]}
+    spaceBetween={24}
+    slidesPerView={1}
+    navigation
+    pagination={{ clickable: true }}
+    breakpoints={{
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }}
+  >
+    {[
+      { video: "/videos/video.mp4" },
+      { video: "/videos/video1.mp4" },
+      { video: "/videos/video2.mp4" },
+    ].map((pessoa, idx) => (
+      <SwiperSlide key={idx}>
+        <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300">
+          <video
+            controls
+            className="w-full h-80 object-cover"
+           /*  poster="/images/thumb.jpg" // se quiser uma imagem antes do vídeo iniciar */
+          >
+            <source src={pessoa.video} type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+          <div className="p-4 text-center text-[#827C73] bg-[#F0F1DA]">
+         
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
 </section>
 
       {/* Diferenciais Section */}
@@ -329,7 +329,7 @@ export default function Component() {
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
-            © 2024 Dra. Ângela Maria Leal - Endo Life Master. Todos os direitos reservados.
+            © 2025 Dra. Ângela Maria Leal - Endo Life Master. Todos os direitos reservados.
           </p>
         </div>
       </footer>
