@@ -108,9 +108,9 @@ export default function Component() {
     }}
   >
     {[
-      { video: "/videos/video.mp4" },
-      { video: "/videos/video1.mp4" },
-      { video: "/videos/video2.mp4" },
+      { video: "/videos/v1.mp4" },
+      { video: "/videos/v2.mp4" },
+      { video: "/videos/v3.mp4" },
     ].map((pessoa, idx) => (
       <SwiperSlide key={idx}>
         <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300">
