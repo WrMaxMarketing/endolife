@@ -13,12 +13,11 @@ import Image from "next/image"
 
 export default function Component() {
   const handleWhatsAppClick = () => {
-    // Substitua pelo seu número do WhatsApp com código do país
-    const phoneNumber = "5511999999999" // Exemplo: 55 + DDD + número
-    const message = encodeURIComponent("Olá! Gostaria de saber mais sobre o programa Endo Life Master.")
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
+    const phoneNumber = "558694647720"; // 55 + 86 + 94647720
+    const message = encodeURIComponent("Olá! Gostaria de saber mais sobre o programa Endo Life Master.");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   }
-
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F0F1DA] via-white to-[#F0F1DA]">
       {/* Hero Section */}
