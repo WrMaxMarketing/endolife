@@ -116,7 +116,7 @@ export default function Component() {
         <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300">
           <video
             controls
-            className="w-full h-80 object-cover"
+            className="w-full h-83 object-cover"
            /*  poster="/images/thumb.jpg" // se quiser uma imagem antes do vídeo iniciar */
           >
             <source src={pessoa.video} type="video/mp4" />
