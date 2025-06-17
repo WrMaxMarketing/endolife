@@ -16,9 +16,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        {/* Google Analytics */}
+        {/* Google tag (gtag.js) */}
         <Script
           strategy="afterInteractive"
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-RCYT944HR4"
         />
         <Script
@@ -29,9 +30,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-RCYT944HR4', {
-                page_path: window.location.pathname,
-              });
+              gtag('config', 'G-RCYT944HR4');
             `,
           }}
         />
