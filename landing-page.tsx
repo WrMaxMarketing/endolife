@@ -91,7 +91,7 @@ export default function Component() {
       Histórias de transformação
     </h2>
     <p className="text-lg text-[#6B6B6B]">
-      Resultados reais de mulheres que decidiram cuidar de si com leveza, propósito e acompanhamento.
+      Resultados reais de pessoas que decidiram cuidar de si com leveza, propósito e acompanhamento.
     </p>
   </div>
 
