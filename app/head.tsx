@@ -1,15 +1,18 @@
 // app/head.tsx
+
 export default function Head() {
     return (
       <>
-        {/* Metadados opcionais */}
         <title>Dra. Ângela Maria Leal – Endo Life Master</title>
-        <meta name="description" content="Método clínico de emagrecimento Endo Life Master" />
+        <meta
+          name="description"
+          content="Método clínico de emagrecimento Endo Life Master"
+        />
   
         {/* Google tag (gtag.js) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-VEGLB94146"
+          src="https://www.googletagmanager.com/gtag/js?id=G-TBPJZQSVQV"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -17,7 +20,7 @@ export default function Head() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-VEGLB94146');
+              gtag('config', 'G-TBPJZQSVQV');
             `,
           }}
         />
