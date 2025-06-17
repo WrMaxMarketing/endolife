@@ -1,29 +1,31 @@
+// app/layout.tsx
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Dra. Ângela Maria Leal - Endo Life Master',
-  description: 'Dra. Ângela Maria Leal - Endo Life Master',
-  generator: 'Dra. Ângela Maria Leal - Endo Life Master',
+  title: 'Dra. Ângela Maria Leal – Endo Life Master',
+  description: '...',
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="pt-BR">
-      <head>
-        {/* Google tag (gtag.js) */}
+      {/* Next.js gera o <head> automaticamente */}
+      <head />
+      <body>
+        {/* Google tag (gtag.js) — agora dentro do <body> */}
         <Script
           strategy="afterInteractive"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-RCYT944HR4"
         />
         <Script
-          id="google-analytics"
+          id="gtag-init"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -34,8 +36,9 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body>{children}</body>
+
+        {children}
+      </body>
     </html>
   )
 }
