@@ -103,13 +103,14 @@ export default function Component() {
     pagination={{ clickable: true }}
     breakpoints={{
       768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 },
     }}
   >
     {[
       { video: "/videos/v1.mp4" },
       { video: "/videos/v2.mp4" },
       { video: "/videos/v3.mp4" },
+      { video: "/videos/v4.mp4" },
     ].map((pessoa, idx) => (
       <SwiperSlide key={idx}>
         <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300">
