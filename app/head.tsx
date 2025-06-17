@@ -9,7 +9,7 @@ export default function Head() {
         {/* Google tag (gtag.js) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-RCYT944HR4"
+          src="https://www.googletagmanager.com/gtag/js?id=G-VEGLB94146"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -17,7 +17,7 @@ export default function Head() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-RCYT944HR4');
+              gtag('config', 'G-VEGLB94146');
             `,
           }}
         />
