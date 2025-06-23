@@ -14,7 +14,7 @@ import Image from "next/image"
 export default function Component() {
   const handleWhatsAppClick = () => {
     const phoneNumber = "558694647720"; // 55 + 86 + 94647720
-    const message = encodeURIComponent("Olá! Gostaria de saber mais sobre o programa Endo Life Master.");
+    const message = encodeURIComponent(" Quero saber mais sobre o Programa de acompanhamento com a Dra Ângela !");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   }
   
