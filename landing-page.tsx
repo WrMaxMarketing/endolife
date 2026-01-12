@@ -272,10 +272,10 @@ export default function Component() {
                       <div className="w-8 h-8 bg-[#A47FB5] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <Heart className="w-4 h-4 text-white" />
                       </div>
-                      <div>
+                      { /*  <div>
                         <p className="font-bold text-[#827C73] text-lg">Sessão estratégica</p>
                         <p className="text-gray-600">com nutricionista online</p>
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="flex items-start space-x-4">
