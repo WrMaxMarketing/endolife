@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      {/* Next.js gera o <head> automaticamente */}
       <head>
-        {/* Meta Pixel */}
-        {/* <Script
+        
+         {/* Meta Pixel */}
+        <Script
           id="meta-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -31,11 +31,12 @@ export default function RootLayout({
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '2612979692229075');
+              fbq('init', '1419288866257812');
               fbq('track', 'PageView');
             `,
           }}
-        /> */}
+        />
+        {/* End Meta Pixel */}
 
 
         {/* Google Tag Manager */}
@@ -55,6 +56,17 @@ export default function RootLayout({
         {/* End Google Tag Manager */}
       </head>
       <body>
+          {/* Meta Pixel (noscript) */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=1419288866257812&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+        {/* End Meta Pixel (noscript) */}
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
