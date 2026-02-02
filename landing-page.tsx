@@ -208,10 +208,10 @@ export default function Component() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center bg-[#A47FB5] text-white rounded-full px-6 py-2 text-sm font-medium mb-4">
+              {/* <div className="inline-flex items-center bg-[#A47FB5] text-white rounded-full px-6 py-2 text-sm font-medium mb-4">
                 <Star className="w-4 h-4 mr-2" />
                 Programa Premium
-              </div>
+              </div> */}
               <h2 className="text-3xl md:text-4xl font-bold text-[#827C73] mb-4">Endo Life Mulher Plena</h2>
               <p className="text-xl text-gray-600 mb-2">
                 Para mulheres que já cuidaram de todos e agora decidem cuidar de si.
