@@ -204,15 +204,15 @@ export default function Component() {
       </section>
 
       {/* Endo Life Mulher Plena Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-[#F0F1DA] to-white">
+     {/*  <section className="py-16 md:py-24 bg-gradient-to-r from-[#F0F1DA] to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-12"> */}
               {/* <div className="inline-flex items-center bg-[#A47FB5] text-white rounded-full px-6 py-2 text-sm font-medium mb-4">
                 <Star className="w-4 h-4 mr-2" />
                 Programa Premium
               </div> */}
-              <h2 className="text-3xl md:text-4xl font-bold text-[#827C73] mb-4">Endo Life Mulher Plena</h2>
+{/*               <h2 className="text-3xl md:text-4xl font-bold text-[#827C73] mb-4">Endo Life Mulher Plena</h2>
               <p className="text-xl text-gray-600 mb-2">
                 Para mulheres que já cuidaram de todos e agora decidem cuidar de si.
               </p>
@@ -278,7 +278,7 @@ export default function Component() {
                       </div> 
                     </div>
 */}
-                    <div className="flex items-start space-x-4">
+                 {/*    <div className="flex items-start space-x-4">
                       <div className="w-8 h-8 bg-[#999C82] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <Users className="w-4 h-4 text-white" />
                       </div>
@@ -293,9 +293,8 @@ export default function Component() {
             </Card>
           </div>
         </div>
-      </section>
-   
-
+      </section> */}
+ 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-[#827C73] to-[#999C82] text-white">
         <div className="container mx-auto px-4 text-center">
